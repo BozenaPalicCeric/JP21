@@ -1,5 +1,5 @@
 drop database if exists frizerskisalon;
-create database frizerskisalon;
+create database frizerskisalon default character set utf8;
 use frizerskisalon;
 
 create table djelatnica (
@@ -56,3 +56,7 @@ insert into posjeta (sifra, usluga, korisnik, djelatnica) values
 (null,1,2,3),
 (null,2,3,1),
 (null,3,1,2);
+
+update usluga set trajanje='2019-11-11 11:23' where sifra=1;
+update djelatnica set ime='Nina', prezime='Ninić' where sifra=1;
+delete from posjeta where sifra=3;
