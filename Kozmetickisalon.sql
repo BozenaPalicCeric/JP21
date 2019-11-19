@@ -31,6 +31,7 @@ create table usluga (
     trajanje datetime
 );
 
+
 alter table korisnik add foreign key (djelatnica) references djelatnica (sifra);
 
 alter table posjeta add foreign key (djelatnica) references djelatnica (sifra);
@@ -56,3 +57,7 @@ insert into posjeta (sifra, usluga, korisnik, djelatnica) values
 (null,1,2,3),
 (null,2,3,1),
 (null,3,1,2);
+
+update usluga set naziv='masaža leđa', cijena='60,00' where sifra=3;
+update korisnik set kontakt='ivkaivic@gmail.com' where sifra=3;
+delete from posjeta where sifra=1;
