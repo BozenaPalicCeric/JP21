@@ -53,3 +53,7 @@ insert into stavka (racun,proizvod,kolicina) values
 (1,1,10),
 (2,2,5),
 (1,3,1);
+
+update proizvod set naziv='mlijeko Meggle' where sifra=1;
+update operater set email='mio.mijic@gmail.com' where sifra=3;
+delete from stavka where kolicina=10;
