@@ -48,3 +48,7 @@ insert into mjesto (sifra, opcina, naziv, brojstanovnika) values
 (null,3,'Bibinje', '3000'),
 (null,3,'Sukošan', '2000'),
 (null,1,'Antunovac', '3000');
+
+update mjesto set brojstanovnika=3050 where sifra=1;
+update mjesto set brojstanovnika=2020 where sifra=2;
+delete from mjesto where brojstanovnika='3000';
