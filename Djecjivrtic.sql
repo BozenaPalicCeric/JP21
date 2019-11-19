@@ -1,5 +1,5 @@
 drop database if exists djecjivrtic;
-create database djecjivrtic;
+create database djecjivrtic default character set utf8;
 use djecjivrtic;
 
 create table odgojnaskupina (
@@ -43,3 +43,7 @@ insert into dijete (sifra, odgojnaskupina,odgajateljica, ime, prezime) values
 (null,1,1,'Luka', 'Lukić'),
 (null, 2,2,'Pero', 'Perić'),
 (null, 3,3,'Ivo', 'Ivić');
+
+update odgojnaskupina set brojdjece=15 where sifra=1;
+update odgajateljica set prezime='Marinić' where sifra=2;
+delete from dijete where sifra=2;
