@@ -59,4 +59,4 @@ insert into posjeta (sifra, usluga, korisnik, djelatnica) values
 
 update usluga set trajanje='2019-11-11 11:23' where sifra=1;
 update djelatnica set ime='Nina', prezime='Ninić' where sifra=1;
-delete from posjeta where sifra=3;
+delete from posjeta where sifra=2;
