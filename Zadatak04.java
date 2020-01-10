@@ -38,7 +38,7 @@ public class Zadatak04 {
 	matrica_3[1][3]=matrica_1[1][3]+matrica_2[1][3];
 	matrica_3[2][0]=matrica_1[2][0]+matrica_2[2][0];
 	matrica_3[2][1]=matrica_1[2][1]+matrica_2[2][1];
-	matrica_3[2][2]=matrica_1[2][2]+matrica_2[2][3];
+	matrica_3[2][2]=matrica_1[2][2]+matrica_2[2][2];
 	matrica_3[2][3]=matrica_1[2][3]+matrica_2[2][3];
 	matrica_3[3][0]=matrica_1[3][0]+matrica_2[3][0];
 	matrica_3[3][1]=matrica_1[3][1]+matrica_2[3][1];
@@ -49,5 +49,6 @@ public class Zadatak04 {
 	System.out.println(Arrays.toString(matrica_3[1]));
     System.out.println(Arrays.toString(matrica_3[2]));
     System.out.println(Arrays.toString(matrica_3[3]));
+    
 }
 }
